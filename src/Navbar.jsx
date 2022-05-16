@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { ReactSVG } from "react-svg";
+
 export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -15,7 +16,7 @@ export default function Navbar() {
             sx={{ flexGrow: 0 }}
           ></Typography>
           <ReactSVG
-            src="stackline_logo.svg"
+            src="src/stackline_logo.svg"
             width="0"
             height="0"
             style={{ width: 100 }}

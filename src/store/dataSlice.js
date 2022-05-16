@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchData = createAsyncThunk("/appData/fetchData", async () => {
-  const rep = await fetch("/mockData.json")
+  const rep = await fetch("/src/mockData.json")
     .then((response) => response.json())
     .catch((error) => console.log("error is", error));
   return rep;
