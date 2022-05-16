@@ -34,7 +34,6 @@ export default function Container() {
   }, [dispatch]);
 
   const dataProduct = useSelector((state) => state.appData.dataOb);
-  const dataProductTags = useSelector((state) => state.appData.dataOb.tags);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -57,10 +56,10 @@ export default function Container() {
               <div>{dataProduct.subtitle}</div>
             </TitleContainer>
             <TagsContainer>
-              {dataProductTags ?
-                dataProductTags.map((item, index) => (
+              {dataProduct.tags &&
+                dataProduct.tags.map((item, index) => (
                   <Badge variant="outlined" label={item} key={index} p={2} />
-                )) : <p>Product tags are empty</p>}
+                ))}
             </TagsContainer>
           </Item>
         </Grid>
