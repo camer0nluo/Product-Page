@@ -57,10 +57,10 @@ export default function Container() {
               <div>{dataProduct.subtitle}</div>
             </TitleContainer>
             <TagsContainer>
-              {dataProductTags &&
+              {dataProductTags ?
                 dataProductTags.map((item, index) => (
                   <Badge variant="outlined" label={item} key={index} p={2} />
-                ))}
+                )) : <p>Product tags are empty</p>}
             </TagsContainer>
           </Item>
         </Grid>
