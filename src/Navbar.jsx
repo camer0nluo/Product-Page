@@ -16,7 +16,7 @@ export default function Navbar() {
             sx={{ flexGrow: 0 }}
           ></Typography>
           <ReactSVG
-            src="src/stackline_logo.svg"
+            src="/src/stackline_logo.svg"
             width="0"
             height="0"
             style={{ width: 100 }}
