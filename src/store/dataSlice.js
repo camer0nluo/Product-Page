@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import data from "../mockData.json"
 export const fetchData = createAsyncThunk("/appData/fetchData", async () => {
-  const rep = await fetch("/src/mockData.json")
-    .then((response) => response.json())
-    .catch((error) => console.log("error is", error));
-  return rep;
+  // const rep = await fetch("/src/mockData.json")
+  //   .then((response) => response.json())
+  //   .catch((error) => console.log("error is", error));
+  return data;
 });
 
 const initialState = {
