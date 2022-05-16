@@ -66,7 +66,6 @@ export default function Container() {
         </Grid>
         <Grid item xs={9} p={5}>
           <ItemLeft>
-            {/* <Typography>Retail Sales</Typography> */}
             <Charts />
           </ItemLeft>
         </Grid>
