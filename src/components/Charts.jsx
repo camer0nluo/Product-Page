@@ -1,8 +1,7 @@
 import React from "react";
 import { ResponsiveContainer, XAxis, YAxis, LineChart, Line } from "recharts";
-import styled from 'styled-components'
+import styled from "styled-components";
 import { useSelector } from "react-redux";
-
 
 export default function Charts() {
   const product = useSelector((state) => state.appData.dataOb);
@@ -26,7 +25,7 @@ export default function Charts() {
     const splitted = dateString.split("-");
     return monthNames[parseInt(splitted[1] - 1)];
   };
-  
+
   return (
     <PContainer>
       <Title>Retail Sales</Title>
@@ -60,10 +59,10 @@ export default function Charts() {
 }
 
 export const PContainer = styled.div`
-padding: 10px;
-`
+  padding: 10px;
+`;
 
 export const Title = styled.p`
-padding: 0px 20px;
-font-size: 1.3rem;
-`
+  padding: 0px 20px;
+  font-size: 1.3rem;
+`;

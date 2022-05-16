@@ -59,7 +59,7 @@ export default function Container() {
             <TagsContainer>
               {dataProductTags &&
                 dataProductTags.map((item, index) => (
-                  <Badge label={item} key={index} p={2} />
+                  <Badge variant="outlined" label={item} key={index} p={2} />
                 ))}
             </TagsContainer>
           </Item>
@@ -87,4 +87,5 @@ export const TitleContainer = styled.div`
 
 export const Badge = styled(Chip)`
   border-radius: 0;
+  margin: 5px;
 `;
