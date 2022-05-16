@@ -22,7 +22,8 @@ export default function Charts() {
   ];
 
   const string_to_month = (dateString) => {
-    const splitted = dateString.split("-");
+    const dates = dateString.toString();
+    const splitted = dates.split("-");
     return monthNames[parseInt(splitted[1] - 1)];
   };
 
